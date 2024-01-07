@@ -5,7 +5,7 @@
 void main() {
 	buffer page = visit_url();
 	int num = 0;
-	string fakeHandFull = `<tr><td width=30 height=30><img src="https://d2uyhvukfffg5a.cloudfront.net/itemimages/glove.gif" class=hand onClick='descitem\\([\\d\\s,]+\\)'></td><td valign=center><b>fake hand</b></td></tr>`;
+	string fakeHandFull = `<tr><td[^>]*><img[^>]*></td><td[^>]*><b>fake hand</b></td></tr>`;
 	string fakeHandPart = "<b>fake hand</b>";
 
 	matcher m = create_matcher(fakeHandPart,page);
