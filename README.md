@@ -1,6 +1,6 @@
 # fake hand relay
 
-A kolmafia script written in ASH to compress the display of fake hands on profiles on the `charsheet.php` and `showplayer.php` pages.
+A kolmafia script written in ASH to compress the display of fake hands on the following pages: `charsheet.php`, `showplayer.php`, and `inventory.php`.
 
 ## Example
 
