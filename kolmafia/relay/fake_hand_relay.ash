@@ -12,7 +12,7 @@ buffer fake_hand_relay(buffer page) {
 
 	switch (get_path()) {
 		default:
-			abort("called from an invalid url");
+			return page;
 		case "inventory.php":
 			row = `<tr><td[^>]*><a[^>]*>Off-Hand</a>:</td><td><img[^>]*></td><td><b>fake hand</b>\\s+<a[^>]*><font[^>]*>\\[unequip\\]</font></a></td></tr>`;
 			break;
